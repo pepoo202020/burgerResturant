@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@300;700&family=Nunito&family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+}
+/* HEADER STYLE START */
+.navbar{
+    width: 100%;
+    height: 110px;        
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 100%);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .wrapper{
+    padding: 20px 103px 20px 83px;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar .wrapper img{
+    width: 93px;
+}
+
+.navbarLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 59%;
+    list-style: none;
+}
+
+.navbarLinks.vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    width: 78%;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbarLinks.vertical li {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.navbarItem{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.navbarItem:hover, .navbarItem.active, .navbar .wrapper i:hover{
+    color: #f64b3c;
+}
+
+.navbar .wrapper i{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* HEADER STYLE END */
+
+/* HERO SECTION STYLE START */
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/heroBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .wrapper{
+    height: 100%;
+    margin: 0 103px 0 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .wrapper h1{
+    margin: 160px 0 42px 0;
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+    font-size: 80px;
+}
+.hero .wrapper p {
+    width: 45%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 57px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero .wrapper a{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 56px;
+    background-color: #f64b3c;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 95px;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero .wrapper a:hover{
+    color: #f64b3c;
+    background: transparent;
+    border: 1px solid #f64b3c;
+}
+/* HERO SECTION STYLE END */
+
+/* OUR CHIEF SECTION STYLE START */
+.ourChief{
+    height: 100%;
+    width: 100%;
+    background-image: url('images/ourChiefBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ourChief .wrapper{
+    padding: 120px 170px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ourChief .wrapper .mainTitle {
+    font-family: 'Archivo', sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 50px;
+    color: #f64b3c;
+    margin-bottom: 20px;
+}
+
+.ourChief .wrapper .mainContent{
+    width: 52%;
+    text-align: center;
+    color: #f64b3c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.chefs{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chefCard{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.chefCard img{
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border: 3px solid #f64b3c;
+    margin: 20px 0;
+}
+
+.chefCard img:hover{
+    transform: scale(1.1);
+}
+
+.chefCard h1{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #f64b3c;
+}
+.chefCard p{
+    color: #f64b3c;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+}
+/* OUR CHIEF SECTION STYLE END */
+
+/* BEST BURGER SECTION STYLE START */
+.bestBurger{
+    width: 100%;
+    height: 100%;
+    background-color: #f64b3c;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+.bestBurger .wrapper{
+    width: 100%;
+    height: 60%;
+    margin: 0 150px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bestBurger .wrapper img {
+    height: 100%;
+    width: 40%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.bestBurger .wrapper img:hover{
+    transform: scale(1.1);
+}
+
+.bestBurgerCard {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bestBurgerCard h1 {
+    font-size: 55px;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+}
+
+.bestBurgerCard p {
+    margin: 30px 0;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.bestBurgerCard a {
+    background-color: #fff;
+    width: 60%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f64b3c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.bestBurgerCard a:hover{
+    color: #fff;
+    background: transparent;
+    border: 3px solid #fff;
+}
+/* BEST BURGER SECTION STYLE END */
+
+/* BIG BURGER SECTION STYLE START */
+.bigBurger{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    background-image: url('images/ourChiefBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bigBurger .wrapper{
+    width: 100%;
+    height: 60%;
+    margin: 0 150px ;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.bigBurger .wrapper img {
+    height: 100%;
+    width: 40%;
+    border-radius: 50%;
+    border: 3px solid #f64b3c;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.bigBurger .wrapper img:hover{
+    transform: scale(1.1);
+}
+
+.bigBurgerCard {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bigBurgerCard h1 {
+    font-size: 55px;
+    text-transform: capitalize;
+    color: #f64b3c;
+    font-family: 'Archivo', sans-serif;
+}
+
+.bigBurgerCard p {
+    margin: 30px 0;
+    color: #f64b3c;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.bigBurgerCard a {
+    background-color: #f64b3c;
+    width: 60%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.bigBurgerCard a:hover{
+    color: #f64b3c;
+    background: transparent;
+    border: 3px solid #f64b3c;
+}
+/* BIG BURGER SECTION STYLE END */
+
+/* STATISTICS SECTION STYLE START */
+.statistics{
+    width: 100%;
+    height: 100%;
+    background-color: #f64b3c;
+}
+.statistics .wrapper {
+    padding: 100px 150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statistics .wrapper .statisticsMainTitle {
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.statistics .wrapper p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.statisticsCounters{
+    display: flex;
+    height: 45%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.statisticsCounterCard{
+    height: 310px;
+    width: 310px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.counterK{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.statisticsCounterCard h1 , .counterK span{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Archivo', sans-serif;
+    
+}
+
+#counter01 , .counterK span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.statisticsCounterCard h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/* STATISTICS SECTION STYLE END */
+/* POPULAR PACKAGES SECTION STYLE START */
+.popularPackages{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/ourChiefBackground.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.popularPackages .wrapper{
+    padding: 100px 150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popularPackages .wrapper .mainTitle {
+    color: #f64b3c;
+    font-family: 'Archivo', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 90px;
+    width: 100%;
+    text-align: center;
+}
+.packages{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.packageCard{
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.packageCard:hover{
+    transform: scale(1.1);
+}
+.packageCard h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+    color: #f64b3c;
+    width: 100%;
+    text-align: center;
+}
+.packageCard h3{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    color: #f64b3c;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.packageCard img {
+    height: 30%;
+    width: 30%;
+    margin: 30px 0;
+}
+
+.packageCard p{
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: #f64b3c;
+    margin-bottom: 20px;
+}
+.packageCard a{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f64b3c;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+.packageCard a:hover{
+    color: #f64b3c;
+    border: 2px solid #f64b3c;
+    background: transparent;
+}
+/* POPULAR PACKAGES SECTION STYLE END */
+
+/* BARY HENDERSON SECTION STYLE START */
+.baryHenderson{
+    width: 100%;
+    height: 800px;
+    background-image: url(images/baryHendersonBack.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.baryHenderson::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(246, 75, 60, 0.8);
+}
+.baryHenderson .wrapper{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    padding: 100px 150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+.baryHenderson .wrapper p{
+    width: 70%;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.baryHenderson .wrapper h1 {
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+/* BARY HENDERSON SECTION STYLE END */
+
+/* SUBSCRIBE SECTION STYLE START */
+.subscribe{
+    width: 100%;
+    height: 100%;
+    background: url(images/ourChiefBackground.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px;
+}
+.subscribe .wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe .wrapper h1 {
+    font-size: 65px;
+    font-weight: 600;
+    color: #f64b3c;
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 20px;
+}
+.subscribe .wrapper p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: #f64b3c;
+    max-width: 60%;
+    margin-bottom: 50px;
+}
+.subscribeBox{
+    width: 65%;
+    height: 63px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.subscribeBox input{
+    width: 75%;
+    height: 100%;
+    border: none;
+    padding: 0 50px;
+    outline: none;
+    font-size: 20px;
+    color: #835e3f;
+    font-family: 'Nunito', sans-serif;
+
+}
+.subscribeBox input::placeholder{
+    color: #835e3f;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.subscribeBox a{
+    width: 25%;
+    height: 100%;
+    background-color: #f64b3c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all 0.4s ease-in-out;
+}
+.subscribeBox a:hover{
+    color: #f64b3c;
+    background-color: #fff;
+    border: 2px solid #f64b3c;
+}
+/* SUBSCRIBE SECTION STYLE END */
+
+/* FOOTER SECTION STYLE START */
+.footer{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+    padding: 100px;
+}
+.footer .wrapper{
+    padding: 100px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    padding: 50px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.col:nth-of-type(1){
+    width: 40%;
+}
+.col:nth-of-type(2),.col:nth-of-type(3),.col:nth-of-type(4){
+    width: 20%;
+}
+.col h1 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.col p {
+    font-family: 'Nunito', sans-serif;
+    width: 70%;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.socialLinks{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.socialLinks i{
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.socialLinks i:hover{
+    background: transparent;
+    border: 1px solid #f64b3c;
+    color: #f64b3c;
+    transform: scale(1.08);
+}
+
+.col ul{
+    list-style: none;
+}
+.col ul li a{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.4s ease-in-out;
+    text-transform: capitalize;
+}
+.col ul li a:hover{
+    color: #f64b3c;
+}
+/* FOOTER SECTION STYLE END */
+
+/* RESPONSIVE MEDIA QUERIES */
+@media screen and (max-width: 854px) {
+    .navbarLinks{
+        display: none;
+    }
+    .navbar .wrapper i{
+        display: block;
+    }
+    .packages{
+        flex-direction: column;
+    }
+    .packageCard{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .baryHenderson .wrapper p, .baryHenderson .wrapper h1{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1148px) {
+    .bestBurger .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bestBurger .wrapper img, .bigBurger .wrapper img {
+        margin: 26px;
+        width: 100%;
+    }
+    .bestBurgerCard , .bigBurgerCard{
+        align-items: center;
+        width: 100%;
+    }
+    .bigBurger .wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .statisticsCounters{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+@media screen  and (max-width: 1505px){
+    .subscribeBox a {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 1076px) {
+    .ourChief .wrapper h1,.statistics .wrapper h1{
+        margin-bottom: 20px;
+    }
+    .chefs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .chefCard{
+        margin: 10px;
+    }
+    .chefCard img{
+        margin: 20px 0;
+    }
+    .subscribeBox a, .subscribeBox input::placeholder , .subscribeBox input{
+        font-size: 10px;
+    }
+    .subscribeBox{
+        width: 100%;   
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .hero .wrapper a , .bestBurgerCard a,.bigBurgerCard a{
+        font-size: 16px;
+        width: 50%;
+    }
+    .hero .wrapper h1{
+        font-size: 55px;
+        width: 100%;
+    }
+    .hero .wrapper p{
+        width: 100%;
+    }
+    .ourChief .wrapper,.statistics .wrapper,.popularPackages .wrapper{
+        padding: 100px 100px;
+    }
+    .ourChief .wrapper .mainTitle,.bestBurgerCard h1, .bigBurgerCard h1,.statistics .wrapper .statisticsMainTitle, .popularPackages .wrapper .mainTitle, .baryHenderson .wrapper h1{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .ourChief .wrapper .mainContent,.bestBurgerCard p,.bigBurgerCard p,.statistics .wrapper p{
+        letter-spacing: normal;
+        text-align: center;
+        width: 100%;
+    }
+    .bestBurger .wrapper,.bigBurger .wrapper{
+        margin: 0 100px;
+    }
+    .statisticsCounterCard{
+        height: 215px;
+        width: 215px;
+    }
+    .subscribe{
+        padding: 0;
+    }
+    .footer .wrapper{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .footer .wrapper .col{
+        width: 100%;
+        text-align: center;
+    }
+    .col p{
+        width: 100%;
+        text-align: center;
+    }
+    .socialLinks{
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 420px) {
+    .baryHenderson .wrapper p{
+        width: 100%;
+        font-size: 15px;
+    }
+    .baryHenderson .wrapper h1{
+        font-size: 18px;
+    }
+    .subscribe .wrapper{
+        padding: 100px 10px;
+    }
+    .bigBurger .wrapper a, .bestBurger .wrapper a{
+        text-align: center;
+    }
+}
